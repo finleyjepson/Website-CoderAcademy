@@ -26,6 +26,14 @@ header h1 {
     padding-left: 40px;
 }
 
+.logo {
+    font-size: x-large;
+    color: white;
+    padding-left: 5vh;
+    text-decoration: none;
+
+}
+
 .sign-in {
     float: right;
 }
@@ -37,7 +45,7 @@ nav {
 
 nav a {
     float: left;
-    font-size: 13px;
+    font-size: 1.5vh;
     text-decoration: none;
     text-align: center;
     padding:  14px 16px;
@@ -107,60 +115,6 @@ p {
     
 }
 
-.row::after {
-    content: "";
-    display: table;
-    clear: both;
-    padding-top: 5px;
-}
-
-.login-section input {
-    width: 20vh;
-    padding: 3px 0;
-    margin: 1px 0;
-    border-color: transparent;
-    border-radius: 4px;
-    border-style: solid;
-    box-sizing: border-box;
-    border-width: 1px;
-    outline: none;
-    float: right;
-    width: 75%;
-    margin-bottom: 5%;
-    padding-left: 5px;
-    
-}
-
-.login-section input:focus::placeholder {
-    color: transparent;
-}
-
-.login-section label {
-    width: 25%;
-    margin-top: 6px;
-    display: inline-block;
-}
-
-.login-section button{
-    width: 15vh;
-    margin-bottom: 5px;
-}
-
-.login-div button {
-    color: #000;
-    margin:0 auto;
-    display: block;
-   top: 50%;
-   background-color: white;
-   border: 1px solid transparent;
-   border-radius: 3px;
-   padding: 2px;
-}
-
-.login-div button:hover {
-    background-color: rgb(226, 226, 226);
-}
-
 .login-div {
     position: relative;
     top: 50%;
@@ -177,11 +131,60 @@ p {
     border-color: rgba(255, 255, 255, 0.329);
 }
 
+.row::after {
+
+}
+
 .login-header {
     text-align: center;
     font-size: large;
     font-weight: normal;
-    padding-bottom: 10px;
+}
+
+.login-div label {
+    width: 25%;
+    margin-top: 6px;
+}
+
+.login-div input {
+    padding: 3px 0;
+    border-color: transparent;
+    border-radius: 4px;
+    border-style: solid;
+    border-width: 1px;
+    outline: none;
+    width: 50%;
+    display: block;
+    margin: 5% auto 5% auto;
+}
+
+/* .login-div input:focus::placeholder {} */
+
+@keyframes login-fade {
+    from {width: 50%;}
+    to {width: 70%;}
+}
+
+.login-div input:focus {
+    width: 70%;
+    animation: login-fade 0.5s both;
+}
+
+.login-div button {
+   width: 15vh;
+   color: #000;
+   margin:0 auto;
+   margin-bottom: 5px;
+   display: block;
+   top: 50%;
+   background-color: white;
+   border: 1px solid transparent;
+   border-radius: 3px;
+   padding: 2px;
+}
+
+.login-div button:hover {
+    background-color: rgb(226, 226, 226);
 }
 
 /* ================================================================= */
